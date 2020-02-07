@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Strictness
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+
+    "outDir": "build",
+
+    "target": "es2017",
+    // Required for Map and console
+    "lib": ["ES7"],
+
+    // Required for @types/nearley
+    // "typeRoots": ["node_modules/@types"],
+
+    // Required if you want to run index.js in node
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./src/**/*.test.ts"]
+}
